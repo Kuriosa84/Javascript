@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Title</title>
+        <style>
+            button {
+                font-size: 24pt;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!--
+        1. Skapa en HTML-knapp och en funktion som anropas när en användare klickar på knappen
+        2. Funktionen som hanterar ett onclick-event har tillgång till en MouseEvent-parameter – extrahera från detta värde X- och Y-koordinaterna för muspekaren vid klicket
+        3. Skriv en JavaScript-funktion som skickar användaren vidare till en annan webbadress efter tre sekunder
+            Tips: Använd setTimeout() och location-egenskapen på window-objektet
+        4. Gör så att sidans titel reflekterar hur många sekunder sidan har varit öppen
+            Tips: Använd document.title-egenskapen och setInterval() på window-objektet
+        5. Gör så att webbläsaren “kommer ihåg” hur många gånger knappen har klickats på, även om man startar om webbläsaren
+            Tips: Använd localStorage-objektet på window-objektet
+        6. Anpassa enVanligFunktion så att dialogrutan inte längre visas då man klickar på rubriken
+            Tips: Undersök hur “event bubbling/propagation” fungerar
+        
+        addEventListener('load', function () {
+    function enVanligFunktion() {
+        console.log('Användaren klickade! Sidan är förresten ' + innerWidth + ' bildpunkter bred.');
+    }
+
+    document.getElementById('rubrik').addEventListener('click', enVanligFunktion);
+    addEventListener('click', function () { alert('Detta skall inte visas när man klickar på rubriken.'); });
+    });
+        -->
+        <button id="leButton">&Kopf;licka på mig</button><br>
+        <button id="goAfter3Seconds">Gå till annan webbplats</button>
+        <div id="myDiv">TODO write content</div>
+        <div id="counterDiv"></div>
+        <h1 id="rubrik">Rubrik</h1>
+        <p>Brödtext bla bla bla</p>
+    </body>
+</html>
